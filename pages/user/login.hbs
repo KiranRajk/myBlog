@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>login page</title>
+</head>
+<body>
+    {{!-- <div>
+        <label for="">Email</label>
+        <input type="text" name="email" id="email" placeholder="enter your email"><br>
+
+        <label for="">Password</label>
+        <input type="password" name="password" id="password" placeholder="enter your password">
+
+        <input type="submit" value="login"><br>
+
+        <span>If not a registered user <a href="/signup">SignUp</a></span>
+    </div> --}}
+
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                {{!-- <form action=""> --}}
+                    <div class="person">
+                    <ion-icon name="person"></ion-icon>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" id="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" id="password" required >
+                        <label for="">Password</label>
+                    </div>
+                    <div class="warning">
+                        <p id="warning"></p>
+                    </div>
+                    <input type="submit" value="Log In" onclick="doLogin( )">
+                    <div class="register">
+                        <span>Don't have an account <a href="/signup">SignUp</a> </span>
+                    </div>
+                {{!-- </form> --}}
+            </div>
+        </div>
+    </section>
+            <script src="script.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
