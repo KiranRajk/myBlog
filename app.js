@@ -6,6 +6,7 @@ const users = require('./routes/user')
 const admin = require('./routes/admin')   // admin is a local module so we have to mention its path inside the paranthesis 
 const connectDB = require( './config/dbConfig' )  //require the local module into the main page
 const cookieParser = require('cookie-parser')   //parse cookie
+require('dotenv').config()
 
 
 app.set('view engine' , 'hbs')  

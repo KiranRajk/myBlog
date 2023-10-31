@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+  }
+.custom-navbar {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    background: #fff !important;
+}
+.nav-item a {
+    color: #8D7B68 !important;
+    /* padding: 6px 15px !important; */
+    border-radius: 20px;
+    margin: 0 10px !important;
+    font-weight: 600;
+}
+.nav-item a:hover{
+    background: #8D7B68;
+    color: #fff !important;
+}
+.logo{
+    font-size: 2em !important;
+    color: #8D7B68 !important;
+    pointer-events: none;
+}
+/* .userlog { 
+    display: flex;
+    justify-content: end;
+} */
+
+
+
+ion-icon{
+    font-size: 2em;
+}
+.logout{
+    color: #555;
+    font-size: small;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+.logout:hover{
+    color: red;
+    transform: translateY(-4px);
+}
+
+.heading {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh;
+  }
+  
+  #carouselExample {
+    width: 620px !important;
+    height: 392px !important;
+    border-radius: 50%;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.sectiondetails h1 {
+    color: #A4907C !important;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 57px;
+}
+.sectiondetails h6 {
+    color: #C8B6A6;
+    line-height: 24px;
+    font-weight: 700;
+}
+.content {
+    padding-top: 6rem;
+}
+.content p {
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:normal;
+     font-weight: 400;
+     line-height: 40px;
+}
+.createdBy {
+    padding-top: 3rem;
+}

@@ -1,3 +1,5 @@
+const { json } = require("express");
+
 const showImages = (  ) => {
     const imageInput = document.getElementById('imageInput');
     const imagePreview = document.getElementById('imagePreview');
@@ -11,4 +13,23 @@ const showImages = (  ) => {
         image.style.margin = "3px";
         imagePreview.appendChild( image);
     }
+}
+
+function deletePost(postId){
+    // console.log(postId); 
+    fetch('/admin/deletePost' , {
+          method : 'delete' , 
+          headers : {
+            "Content-Type": "application/json"
+          },
+          body : JSON.stringify({postId : postId})
+    }).then((res) =>res.json())
+    .then((resp) => {
+        if(resp.delete){
+            location.reload( )
+        }
+        else{
+            alert("Something went wrong")
+        }
+    })
 }

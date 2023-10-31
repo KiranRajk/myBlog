@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const {users} = require('./usersModel')
 
 const blogSchema = mongoose.Schema({
     heading : {
@@ -10,6 +11,10 @@ const blogSchema = mongoose.Schema({
         type : Date,
         default : new Date( ),
     } ,
+    createdBy : {
+        type : mongoose.Types.ObjectId,
+        ref : "users"
+    },
     content : {
         type : String,
         required : true,

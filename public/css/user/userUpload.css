@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+  }
+.custom-navbar {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    background: #fff !important;
+}
+.nav-item a {
+    color: #8D7B68 !important;
+    /* padding: 6px 15px !important; */
+    border-radius: 20px;
+    margin: 0 10px !important;
+    font-weight: 600;
+}
+.nav-item a:hover{
+    background: #8D7B68;
+    color: #fff !important;
+}
+.logo{
+    font-size: 2em !important;
+    color: #8D7B68 !important;
+    pointer-events: none;
+}
+/* .userlog { 
+    display: flex;
+    justify-content: end;
+} */
+
+
+
+ion-icon{
+    font-size: 2em;
+}
+.logout{
+    color: #555;
+    font-size: small;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+.logout:hover{
+    color: red;
+    transform: translateY(-4px);
+}
+
+.uploadSection{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 90vh !important;;
+}
+/* #blogForm{
+    display: flex;
+    flex-direction: column;
+} */
+/* .blogForm fieldset {
+    border: 2px solid #555;
+    margin: 10px;
+} */
+/* .img-section img {
+    width: 50%; 
+    height: 100%; 
+} */
+
+
+.uploadSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .uploadSection .blogForm {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .uploadSection .blogForm h1 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+  
+  .uploadSection .blogForm label {
+    font-weight: bold;
+  }
+  
+  .uploadSection .blogForm input[type="text"],
+  .uploadSection .blogForm textarea,
+  .uploadSection .blogForm input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .uploadSection .blogForm button {
+    background-color: #A4907C;
+    color: #fff;
+    padding: 10px 20px;
+    border: solid #A4907C;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .uploadSection .blogForm button:hover {
+    background-color: #fff;
+    color: #A4907C;
+  }
+  
+  .uploadSection .img-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .uploadSection .img-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* @media (max-width: 768px) {
+    .uploadSection {
+      flex-direction: column;
+      align-items: center;
+    }
+    .uploadSection .blogForm {
+      width: 100%;
+    }
+    .uploadSection .img-section {
+      margin-top: 20px;
+    }
+  } */
+  

@@ -12,7 +12,7 @@ function doSignUp( ){
     
     fetch('/register' ,{
         method: "post" , //client side data send to server- post
-        headers : {"Content-Type" :  "application/json"},   //to send data to server which is in json format 
+        headers : {"Content-Type" :  "application/json"},   //to send data to server which is in json format , This header informs the server that the request body is in JSON format.
         body : JSON.stringify(formData)  //convert the object to json string
     }).then((data) =>{
         window.location.href = "/"
@@ -26,14 +26,16 @@ function doSignUp( ){
 function checkPassword( ){
     let password = document.getElementById('password').value ;
     let cnfrmpassword = document.getElementById('cnfrmpassword').value ;
-    let message = document.getElementById('message');
+    let message = document.getElementById('warning');
 
     if(password.length != 0){
         if( password == cnfrmpassword){
             message.textContent = "Password Matched";
+            message.style.color = "green"; 
         }
         else{
             message.textContent = "Password dont match";
+            message.style.color = "red";
         } 
     } 
 

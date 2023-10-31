@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+  }
+.custom-navbar {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    background: #fff !important;
+}
+.logo{
+    font-size: 2em !important;
+    color: #8D7B68 !important;
+    pointer-events: none;
+}
+.nav-item a {
+    color: #8D7B68 !important;
+    /* padding: 6px 15px !important; */
+    border-radius: 20px;
+    margin: 0 10px !important;
+    font-weight: 600;
+}
+/* .nav-item a.active */
+.nav-item a:hover{
+    background: #8D7B68;
+    color: #fff !important;
+}
+
+ion-icon{
+    font-size: 2em;
+}
+.logout{
+    color: #555;
+    font-size: small;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+.logout:hover{
+    color: red;
+    transform: translateY(-4px);
+}
+
+.home {
+    text-align: center !important;
+    color: #555;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+    background-image: url(/images/user/homepage/homeBanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#headingText {
+    font-size: 3em;
+    font-weight: 800;
+}
+.home p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 1em;
+    font-weight: 500;
+}
+#blogContent {
+    padding-block: 100px;
+}
+
+.card {
+    padding: 0 !important; 
+    margin: 0 !important; 
+    border: none !important; 
+  }
+  .card img {
+    width: 100% !important; 
+    height: auto !important; 
+  }
+
+
+.card-body a {
+    color: #fff;
+    background-color: #8D7B68;
+    margin-top: 25px;
+}
+.card-body a:hover {
+    color: #8D7B68;
+    background-color: #fff;
+    border: solid 1px;
+}
+
+/* .services {
+    height: 50%;
+    padding-block: 100px;
+    background: url(/images/user/homepage/homeBanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(15px);
+}
+.services::before {
+    background-image : url(/images/user/homepage/homeBanner.jpg);
+    filter: blur(15px); /* Apply blur to the pseudo-element */
+    /* z-index: -1; */
+/* } */
+
+.services {
+    height: 50%;
+    padding: 100px 0;
+    position: relative;
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/user/homepage/homeBanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(5px); /* Apply blur to the pseudo-element */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+/* .card .card-img-top {
+    width: 100% !important;
+    height: auto !important; 
+} */
+/* Additional styles for the content in .services */
+
+
+.newsimage img{
+    /* width: 50vw */
+     width: 50%; 
+    height: 100%; 
+}
+.newsletter {
+    color: #555;
+    background: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .newsletter input {
+    background-color: aqua;
+    width: 50%;
+    height: auto;
+    height: 100%;
+} */
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+  }
+
+  .newsletter button[type="submit"] {
+    background-color: #8D7B68;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .newsletter button[type = "submit"]:hover {
+    background-color: #fff;
+    color: #8D7B68;
+  }
+  /* .input-container ion-icon {
+    position: absolute;
+    top: 9em;
+    right: 5.5em;
+    transform: translateY(-50%) ;
+  } */
+ 
+.quotesection {
+    background-color: #f7f7f7; /* Set the background color of the quote section */
+    padding: 20px; /* Add some padding for spacing */
+    padding-block: 100px;
+  }
+
+  .quotesection h2{
+    color: #8D7B68;
+    text-align:center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .card {
+    border: 1px solid #ccc !important; /* Add a border to the card */
+    border-radius: 10px; /* Round the corners of the card */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow to the card */
+  }
+
+  .card-header {
+    background-color: #007bff ; /* Set the header background color */
+    color: #fff; /* Set the header text color to white */
+    padding: 10px; /* Add padding to the header */
+    border-top-left-radius: 10px; /* Round the top-left corner of the header */
+    border-top-right-radius: 10px; /* Round the top-right corner of the header */
+  }
+
+  .blockquote {
+    font-size: 20px; /* Increase the font size of the quote */
+  }
+
+  .blockquote-footer {
+    margin-top: 20px; /* Add margin above the author name */
+    font-style: italic; /* Make the author name italic */
+  }
+

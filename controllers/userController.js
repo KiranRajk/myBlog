@@ -20,10 +20,11 @@ const showSignUp = (req , res) => {
 
 const doSignUp = (req,res) =>{
     console.log(req.body);
+
     USER({
         email : req.body.email,
         username : req.body.username,
-        password : req.body.password
+        password : req.body.password,
     }).save( )
     .then( (res) =>{
         res.json({signup : true});
@@ -61,7 +62,9 @@ const getHomePage = (req,res) => {
 }
 
 const detailedView = (req, res) => {
-    BLOGS.find({_id : req.query.id}).then((response) => {
+    BLOGS.find({_id : req.query.id}).populate({
+        path:"createdBy", select : ['username' , 'email'] }).then((response) => {
+        console.log(response);
         res.render('user/detailedView.hbs' , {data : response [0]})
     })
 }
@@ -101,6 +104,7 @@ const addBlogData = (req, res) => {
            BLOGS({
             heading : req.body.title,
             content : req.body.content ,
+            createdBy : req.query.id,
             images : req.files,
            }).save( ).then((response)=>{
                 res.redirect("/createBlog")
